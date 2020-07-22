@@ -52,18 +52,35 @@
         self.signInButton.enabled = x.boolValue;
     }];
     
-    [[[self.signInButton rac_signalForControlEvents:UIControlEventTouchUpInside]
-      doNext:^(__kindof UIControl * _Nullable x) {
+    //    [[[self.signInButton rac_signalForControlEvents:UIControlEventTouchUpInside]
+    //      doNext:^(__kindof UIControl * _Nullable x) {
+    //        self.signInButton.enabled = NO;
+    //    }]
+    //     subscribeNext:^(__kindof UIControl * _Nullable x) {
+    //        [[self signInServiceSignal] subscribeNext:^(NSNumber *  _Nullable x) {
+    //            self.signInButton.enabled = YES;
+    //            self.signInFailureText.hidden = [x boolValue];
+    //            if ([x boolValue]) {
+    //                [self performSegueWithIdentifier:@"signInSuccess" sender:self];
+    //            }
+    //        }];
+    //    }];
+    
+    //转换信号，用flattenMap，代码结构更简洁！！！效果同上。用map只是转换，会导致signal of signal问题，导致被订阅对象容易搞成转换前的信号。
+    [[[[self.signInButton rac_signalForControlEvents:UIControlEventTouchUpInside]
+       doNext:^(__kindof UIControl * _Nullable x) {
         self.signInButton.enabled = NO;
     }]
-     subscribeNext:^(__kindof UIControl * _Nullable x) {
-        [[self signInServiceSignal] subscribeNext:^(NSNumber *  _Nullable x) {
-            self.signInButton.enabled = YES;
-            self.signInFailureText.hidden = [x boolValue];
-            if ([x boolValue]) {
-                [self performSegueWithIdentifier:@"signInSuccess" sender:self];
-            }
-        }];
+     
+      flattenMap:^__kindof RACSignal * _Nullable(__kindof UIControl * _Nullable value) {
+        return  [self signInServiceSignal];
+    }]
+     subscribeNext:^(NSNumber *  _Nullable x) {
+        self.signInButton.enabled = YES;
+        self.signInFailureText.hidden = [x boolValue];
+        if ([x boolValue]) {
+            [self performSegueWithIdentifier:@"signInSuccess" sender:self];
+        }
     }];
     
     // initially hide the failure message
