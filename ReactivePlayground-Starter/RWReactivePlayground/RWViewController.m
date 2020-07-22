@@ -17,8 +17,6 @@
 @property (weak, nonatomic) IBOutlet UIButton *signInButton;
 @property (weak, nonatomic) IBOutlet UILabel *signInFailureText;
 
-@property (nonatomic) BOOL passwordIsValid;
-@property (nonatomic) BOOL usernameIsValid;
 @property (strong, nonatomic) RWDummySignInService *signInService;
 
 @end
@@ -48,10 +46,10 @@
     RACSignal *isSignInBtnEnableSig = [RACSignal combineLatest:@[isUserNameTextValid, isPasswordTextValid] reduce:^(NSNumber *va4User, NSNumber *va4Pass){
         return @(va4User.boolValue && va4Pass.boolValue);
     }];
-    [isSignInBtnEnableSig subscribeNext:^(NSNumber *  _Nullable x) {
-        @strongify(self);
-        self.signInButton.enabled = x.boolValue;
-    }];
+//    [isSignInBtnEnableSig subscribeNext:^(NSNumber *  _Nullable x) {
+//        @strongify(self);
+//        self.signInButton.enabled = x.boolValue;
+//    }];
     
 //    [[[self.signInButton rac_signalForControlEvents:UIControlEventTouchUpInside]
 //      doNext:^(__kindof UIControl * _Nullable x) {
