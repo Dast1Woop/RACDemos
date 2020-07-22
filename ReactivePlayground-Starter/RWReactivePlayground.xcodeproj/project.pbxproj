@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		47668D1D1EF173A622844C79 /* libPods-RWReactivePlayground.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CBD56E8EE37BE0212967F84C /* libPods-RWReactivePlayground.a */; };
 		721E122718698DC100B30134 /* kitten.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 721E122618698DC100B30134 /* kitten.jpg */; };
 		72A2881E18618A2E00DDD30A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72A2881D18618A2E00DDD30A /* Foundation.framework */; };
 		72A2882018618A2E00DDD30A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72A2881F18618A2E00DDD30A /* CoreGraphics.framework */; };
@@ -21,6 +22,7 @@
 		72A2883E18618A2E00DDD30A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72A2881D18618A2E00DDD30A /* Foundation.framework */; };
 		72A2883F18618A2E00DDD30A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72A2882118618A2E00DDD30A /* UIKit.framework */; };
 		72A2885418620EA100DDD30A /* RWDummySignInService.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A2885318620EA100DDD30A /* RWDummySignInService.m */; };
+		98205D99B61B814EFAE243E6 /* libPods-RWReactivePlaygroundTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6435BA9A2FE6D15FB70F9634 /* libPods-RWReactivePlaygroundTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4E2151DE5D5AE755109750CD /* Pods-RWReactivePlaygroundTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RWReactivePlaygroundTests.debug.xcconfig"; path = "Target Support Files/Pods-RWReactivePlaygroundTests/Pods-RWReactivePlaygroundTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6435BA9A2FE6D15FB70F9634 /* libPods-RWReactivePlaygroundTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RWReactivePlaygroundTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		721E122618698DC100B30134 /* kitten.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = kitten.jpg; sourceTree = "<group>"; };
 		72A2881A18618A2E00DDD30A /* RWReactivePlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RWReactivePlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72A2881D18618A2E00DDD30A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -53,6 +57,10 @@
 		72A2883C18618A2E00DDD30A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		72A2885218620EA100DDD30A /* RWDummySignInService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWDummySignInService.h; sourceTree = "<group>"; };
 		72A2885318620EA100DDD30A /* RWDummySignInService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWDummySignInService.m; sourceTree = "<group>"; };
+		B1A1FC5B81BACE279482B6D8 /* Pods-RWReactivePlaygroundTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RWReactivePlaygroundTests.release.xcconfig"; path = "Target Support Files/Pods-RWReactivePlaygroundTests/Pods-RWReactivePlaygroundTests.release.xcconfig"; sourceTree = "<group>"; };
+		CBD56E8EE37BE0212967F84C /* libPods-RWReactivePlayground.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RWReactivePlayground.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE6A6CA3AB079E5A868C585F /* Pods-RWReactivePlayground.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RWReactivePlayground.release.xcconfig"; path = "Target Support Files/Pods-RWReactivePlayground/Pods-RWReactivePlayground.release.xcconfig"; sourceTree = "<group>"; };
+		EBD7D3ACEF0D99CBF0B4286A /* Pods-RWReactivePlayground.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RWReactivePlayground.debug.xcconfig"; path = "Target Support Files/Pods-RWReactivePlayground/Pods-RWReactivePlayground.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +71,7 @@
 				72A2882018618A2E00DDD30A /* CoreGraphics.framework in Frameworks */,
 				72A2882218618A2E00DDD30A /* UIKit.framework in Frameworks */,
 				72A2881E18618A2E00DDD30A /* Foundation.framework in Frameworks */,
+				47668D1D1EF173A622844C79 /* libPods-RWReactivePlayground.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,18 +82,32 @@
 				72A2883D18618A2E00DDD30A /* XCTest.framework in Frameworks */,
 				72A2883F18618A2E00DDD30A /* UIKit.framework in Frameworks */,
 				72A2883E18618A2E00DDD30A /* Foundation.framework in Frameworks */,
+				98205D99B61B814EFAE243E6 /* libPods-RWReactivePlaygroundTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		49A3A6B2C701B6B51514852E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EBD7D3ACEF0D99CBF0B4286A /* Pods-RWReactivePlayground.debug.xcconfig */,
+				CE6A6CA3AB079E5A868C585F /* Pods-RWReactivePlayground.release.xcconfig */,
+				4E2151DE5D5AE755109750CD /* Pods-RWReactivePlaygroundTests.debug.xcconfig */,
+				B1A1FC5B81BACE279482B6D8 /* Pods-RWReactivePlaygroundTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		72A2881118618A2E00DDD30A = {
 			isa = PBXGroup;
 			children = (
 				72A2882318618A2E00DDD30A /* RWReactivePlayground */,
 				72A2881C18618A2E00DDD30A /* Frameworks */,
 				72A2881B18618A2E00DDD30A /* Products */,
+				49A3A6B2C701B6B51514852E /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,6 +127,8 @@
 				72A2881F18618A2E00DDD30A /* CoreGraphics.framework */,
 				72A2882118618A2E00DDD30A /* UIKit.framework */,
 				72A2883C18618A2E00DDD30A /* XCTest.framework */,
+				CBD56E8EE37BE0212967F84C /* libPods-RWReactivePlayground.a */,
+				6435BA9A2FE6D15FB70F9634 /* libPods-RWReactivePlaygroundTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -143,6 +168,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 72A2884C18618A2E00DDD30A /* Build configuration list for PBXNativeTarget "RWReactivePlayground" */;
 			buildPhases = (
+				2C88B5674834F9D783C6A68A /* [CP] Check Pods Manifest.lock */,
 				72A2881618618A2E00DDD30A /* Sources */,
 				72A2881718618A2E00DDD30A /* Frameworks */,
 				72A2881818618A2E00DDD30A /* Resources */,
@@ -160,6 +186,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 72A2884F18618A2E00DDD30A /* Build configuration list for PBXNativeTarget "RWReactivePlaygroundTests" */;
 			buildPhases = (
+				602F05C86E52B8C1D011FA42 /* [CP] Check Pods Manifest.lock */,
 				72A2883718618A2E00DDD30A /* Sources */,
 				72A2883818618A2E00DDD30A /* Frameworks */,
 				72A2883918618A2E00DDD30A /* Resources */,
@@ -232,6 +259,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2C88B5674834F9D783C6A68A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RWReactivePlayground-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		602F05C86E52B8C1D011FA42 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RWReactivePlaygroundTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		72A2881618618A2E00DDD30A /* Sources */ = {
@@ -356,6 +430,7 @@
 		};
 		72A2884D18618A2E00DDD30A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBD7D3ACEF0D99CBF0B4286A /* Pods-RWReactivePlayground.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -363,6 +438,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RWReactivePlayground/RWReactivePlayground-Prefix.pch";
 				INFOPLIST_FILE = "RWReactivePlayground/RWReactivePlayground-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -370,6 +446,7 @@
 		};
 		72A2884E18618A2E00DDD30A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE6A6CA3AB079E5A868C585F /* Pods-RWReactivePlayground.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -377,6 +454,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RWReactivePlayground/RWReactivePlayground-Prefix.pch";
 				INFOPLIST_FILE = "RWReactivePlayground/RWReactivePlayground-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -384,6 +462,7 @@
 		};
 		72A2885018618A2E00DDD30A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E2151DE5D5AE755109750CD /* Pods-RWReactivePlaygroundTests.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RWReactivePlayground.app/RWReactivePlayground";
@@ -407,6 +486,7 @@
 		};
 		72A2885118618A2E00DDD30A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1A1FC5B81BACE279482B6D8 /* Pods-RWReactivePlaygroundTests.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RWReactivePlayground.app/RWReactivePlayground";
